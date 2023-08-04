@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// components
+import Header from "./components/header/Header";
+import Tab from "./components/tab/Tab";
+import Features from "./components/features/Fetures";
 
 function App() {
+  const tabs = ["About us", "All in one", " Our partners", "Contact us"];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Tab tabs={tabs} defaultTab="All in one" />
+      <Features />
     </div>
   );
 }

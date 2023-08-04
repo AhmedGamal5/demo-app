@@ -1,0 +1,71 @@
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgb(218, 18, 151), rgb(25, 177, 182))
+    1;
+  margin: auto;
+  padding: auto;
+  width: max-content;
+  margin-top: 3rem;
+}
+
+.tab-buttons button {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(104, 102, 102);
+  padding: 5px 15px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border-radius: 3px 3px 0 0;
+}
+.tab-buttons button:hover {
+  background-color: rgba(66, 66, 65, 0.199);
+}
+.tab-buttons button.active {
+  color: white;
+  background: linear-gradient(to right, rgb(161, 10, 111), rgb(2, 75, 80));
+  font-weight: 800;
+}
+
+.tab-content {
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  font-family: 'Poppins', sans-serif;
+}
+.tab-content p {
+  color: rgb(0, 0, 0);
+  line-height: 0.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/******** MEDIA QUERIES (SMALL DEVICES) ********/
+
+@media screen and (max-width: 600px) {
+  .third-sec {
+    display: flex;
+  }
+  .tab-buttons {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+  .tab-buttons button {
+    font-size: 0.7rem;
+  }
+  .tab-content p {
+    margin: auto;
+    padding: auto;
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}

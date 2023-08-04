@@ -1,0 +1,80 @@
+.fourth-sec {
+  margin-top: 2.5rem;
+}
+.fourth-sec h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(136, 19, 116) 0%,
+    rgb(21, 108, 114) 21%,
+    rgb(18, 158, 146) 51%,
+    rgba(0, 255, 115, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fourth-sec .number {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Changa", sans-serif;
+  background: -webkit-linear-gradient(rgb(194, 10, 154), rgb(4, 62, 66));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -2px;
+}
+.headlines {
+  margin-top: 1rem;
+  margin-left: -2rem;
+}
+.fourth-sec .headlines h4 {
+  color: white;
+  background: linear-gradient(to right, rgb(170, 11, 136), rgb(14, 88, 88));
+  width: fit-content;
+  font-size: medium;
+  padding: 5px;
+  border-radius: 2px;
+  font-family: "Noto Sans Vithkuqi", sans-serif !important;
+}
+.fourth-sec .headlines p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: black;
+  padding: 1rem 0;
+  width: 32rem;
+}
+/******** MEDIA QUERIES (MEDIUM DEVICES) ********/
+@media screen and (max-width: 1024px) {
+  .headlines {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+  .fourth-sec .headlines p {
+    width: auto;
+  }
+}
+
+/******** MEDIA QUERIES (SMALL DEVICES) ********/
+
+@media screen and (max-width: 600px) {
+  .fourth-sec h3 {
+    font-size: 1.2rem;
+  }
+  .headlines {
+    margin-top: -0.2rem;
+    margin-left: 0rem;
+  }
+  .fourth-sec .headlines h4 {
+    font-size: 7px;
+  }
+  .fourth-sec .headlines p {
+    font-size: 0.7rem;
+    margin-top: -0.6rem;
+    width: auto;
+  }
+  .fourth-sec .number {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}
