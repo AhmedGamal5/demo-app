@@ -20,9 +20,9 @@
   background-color: transparent;
   border-radius: 3px 3px 0 0;
 }
-.tab-buttons button:hover {
+/* .tab-buttons button:hover {
   background-color: rgba(66, 66, 65, 0.199);
-}
+} */
 .tab-buttons button.active {
   color: white;
   background: linear-gradient(to right, rgb(161, 10, 111), rgb(2, 75, 80));
@@ -58,15 +58,18 @@
     flex-direction: column;
     border: none;
     gap: 0.6rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .tab-buttons button {
     font-size: 0.7rem;
+  }
+  .tab-content{
+    margin-top: 2rem;
   }
   .tab-content p {
     margin: auto;
     padding: auto;
     font-size: 0.7rem;
-    line-height: 1rem;
+    line-height: 1rem;    
   }
 }
