@@ -37,7 +37,8 @@
   align-items: center;
   margin: auto;
   padding: auto;
-  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 .tab-content p {
   color: rgb(0, 0, 0);
